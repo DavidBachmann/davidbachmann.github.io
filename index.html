@@ -1,18 +1,13 @@
 ---
 layout: default
 ---
-
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+<div index class="wrapper">
+	<div class="index-wrapper">
+	    <div class="left-side" id="js-left-img" style="background-image: url('../images/default.jpg');">           
+	      {% include svg.html %}
+	    </div>
+	    <div class="right-side">
+	   		{% include latest.html %}
+	    </div>
+	</div>
 </div>
