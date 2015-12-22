@@ -1,0 +1,29 @@
+// ***
+// * Function for color retrieval from a map
+// ***
+
+@function color($key) {
+  @if map-has-key($color, $key) {
+    @return map-get($color, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $color.";
+  @return null;
+}
+
+
+// ***
+// * Function that converts pixels to rems
+// ***
+
+@function rem($pixels, $context: $rem) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1rem;
+}

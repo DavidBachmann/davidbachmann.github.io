@@ -1,0 +1,39 @@
+//**
+//* Global Config
+//**
+
+// Todo: Choose between #454D52 and #3A4750 for text.
+$color: (
+  _white: #FFF,
+  _offwhite: #FBFBFB,
+  _light: #F9F9F9,
+  _red: #F33535,
+  _text: #3A4750,
+);
+
+$susy: (
+  flow: ltr,
+  math: fluid,
+  output: float,
+  gutter-position: after,
+  container: auto,
+  container-position: center,
+  columns: 12,
+  gutters: 1/4,
+  column-width: false,
+  global-box-sizing: border-box,
+  last-flow: to,
+  debug: (
+    image: hide,
+    color: rgba(#66f, .25),
+    output: background,
+    toggle: top right,
+  ),
+  use-custom: (
+    background-image: true,
+    background-options: false,
+    box-sizing: true,
+    clearfix: false,
+    rem: true,
+  )
+);

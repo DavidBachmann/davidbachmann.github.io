@@ -1,0 +1,15 @@
+.intro-image {
+	margin: 0 -2rem 0 -2rem;
+	height: 350px;
+	overflow: hidden;
+	background-size: 100%;
+	background-position: 50% 60%;
+	background-repeat: no-repeat;
+	border-radius: 2px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&__logo {
+		height: 200px;
+	}
+}

@@ -1,0 +1,15 @@
+.meta {
+	display: flex;
+	.topics {
+		flex: 0 1 60%;
+		font-size: 0.8rem;	
+		color: lighten(color(_text), 20%);	
+
+	}
+	.credits {
+		flex: 0 1 40%;
+		font-size: 0.8rem;
+		text-align: right;
+		color: lighten(color(_text), 30%);	
+	}
+}

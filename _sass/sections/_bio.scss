@@ -1,0 +1,38 @@
+.c-latest-articles {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	background: white;
+	padding-bottom: 0.4rem;
+	padding-left: 0.4rem;
+	&:first-child {
+		padding-top: 0.4rem;
+	}
+	&__description {
+		flex: 0 1 60%;
+		padding: 1.25rem;
+		margin: 0;
+	}
+	&__title {
+		font-family: 'Bitter', sans-serif;
+		font-weight: 400;
+		font-size: 1.33rem;
+		margin: 0;
+		line-height: 1.5rem;
+	}
+	&__date {
+		font-size: 14px;
+		margin: 0;
+	}
+	&__topics {
+		margin: 0;
+		font-size: 14px;
+		span {
+			color: white;
+			font-weight: bold;
+			padding: 4px;
+			margin-right: 4px;
+			background: color(_red);
+		}
+	}
+}

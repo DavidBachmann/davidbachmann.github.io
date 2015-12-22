@@ -1,51 +1,87 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>dbjekyll</title>
 
-    {% include meta.html %}
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Gentium+Basic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
   </head>
+  <body>    
+    <div index class="wrapper">
+        <div class="index-wrapper">
+            <div class="left-side" id="js-left-img" style="background-image: url('../images/default.jpg');">           
+            <svg version="1.1" class="index-svg" id="js-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 318.8 325.8" style="enable-background:new 0 0 318.8 325.8;" xml:space="preserve">
+            <path style="fill:#000000" d="M316.9,184c-6.5,60.8-53.6,105.2-109.2,105.2l-171.1,0V36.6h161.1c22.6,0,43.8,8.8,59.7,24.7
+                c16,16,24.7,37.2,24.7,59.7c0,22.6-8.8,43.8-24.7,59.7c-16,16-37.2,24.7-59.7,24.7h-77.4v-85.3h77.4c19.2,0,37.5,6.4,52.3,18.2
+                c-1.5-22.8-13.3-51-60.8-54.8H83.7v158.5h114c32.3,0,62.8-12.6,85.6-35.5c22.9-22.9,35.5-53.3,35.5-85.6c0-32.3-12.6-62.7-35.5-85.6
+                C260.4,12.6,230,0,197.7,0H0v325.8h197.7c32.3,0,62.8-12.6,85.6-35.5c22.9-22.9,35.5-53.3,35.5-85.6
+                C318.8,197.7,318.2,190.8,316.9,184C317,184,317,184,316.9,184z"/>
+            </svg>
 
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
-      </div>
+            </div>
+            <div class="right-side">
+            <nav class="menu">
+              <a href="#" class="menu__item is-active">Home</a>
+              <a href="#" class="menu__item">Articles</a>
+            </nav>
+                <div class="latest-articles">
+                    
+                    <div class="single-article js-link-parent" data-url="article1">
+                         <a href="/article.html"  class="single-article__title" >How many articles can I fit here?</a>
+                         <p class="single-article__date">— December 22nd 2015</p>
+                    </div>
+                    <div class="single-article js-link-parent"  data-url="article2">
+                        <a href="/article.html" class="single-article__title">Code & coffee for a better health</a>
+                        <p class="single-article__date">— December 21st 2015</p>
+                    </div>
+                    <div class="single-article  js-link-parent" data-url="article3">
+                        <a href="/article.html" class="single-article__title" data-url="article3">Organized mind is a happier mind</a>
+                        <p class="single-article__date">— November 3rd 2015</p>
+                    </div>
+                    <div class="single-article  js-link-parent" data-url="article4">
+                        <a href="/article.html" class="single-article__title">Avoiding conflicts in large web applications</a>
+                        <p class="single-article__date">— September 21st 2015</p>
+                        </div>
+                    <div class="single-article  js-link-parent" data-url="article5">
+                        <a href="/article.html" class="single-article__title">Writing front-end guidelines</a>
+                        <p class="single-article__date">— June 12th 2015</p>
+                    </div>
+                   <div class="single-article  js-link-parent" data-url="article6">
+                        <a href="/article.html" class="single-article__title">25 things I hate about clickbait</a>
+                        <p class="single-article__date">— June 11th 2015</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
-
-    {% include analytics.html %}
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/Hyphenator.js"></script>
+    <script src="scripts/gumshoe.js"></script>
+    <script src="scripts/highlight.pack.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
   </body>
 </html>

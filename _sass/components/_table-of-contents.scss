@@ -1,0 +1,36 @@
+.table-of-contents {
+  flex: 0 0 20%;
+  margin-right: 1rem;
+  nav {
+    &.is-fixed {
+     position: fixed;
+     top: 0;
+     &:before {
+       transform: scaleX(0);
+     }
+    }
+    &:before {
+      content: "\2014";
+      display: block;
+      transform: scaleX(3);
+      transform-origin: left;
+      transition: transform 0.25s ease-in-out;
+    }
+  }
+  &__item {
+    display: block;
+    color: color(_text);
+    line-height: 2;
+    text-decoration: none;
+    &.is-active {
+      //color: darken(color(_text), 10%);
+      color: color(_red);
+    }
+    &:hover {
+      color: darken(color(_text), 10%);
+    }
+    &:first-of-type {
+      padding-top: 0.5rem;
+    }
+  }
+}

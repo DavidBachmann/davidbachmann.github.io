@@ -1,0 +1,36 @@
+@import "environment/config";
+@import "environment/functions";
+@import "environment/variables";
+
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+}
+body {
+	background: color(_white);
+	padding: 0.5rem;
+}
+
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	background: color(_offwhite);
+}
+
+
+
+code {
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    &-track {
+      background: #CCC;
+    }
+    &-thumb {
+        background: #7B7B7B;
+      }
+  }
+}
