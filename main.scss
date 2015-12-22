@@ -1,24 +1,27 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
 
-@import "_sass/environment/config";
-@import "_sass/environment/functions";
-@import "_sass/environment/variables";
+@import "environment/config";
+@import "environment/functions";
+@import "environment/variables";
 
-@import "_sass/base/normalize";
-@import "_sass/base/setup";
-@import "_sass/base/typography";
-@import "_sass/base/helpers";
+@import "base/normalize";
+@import "base/setup";
+@import "base/typography";
+@import "base/helpers";
 
-@import "_sass/components/menu";
-@import "_sass/components/table-of-contents";
-@import "_sass/components/content";
-@import "_sass/components/header";
-@import "_sass/components/intro-image";
-@import "_sass/components/meta";
+@import "components/menu";
+@import "components/table-of-contents";
+@import "components/content";
+@import "components/header";
+@import "components/intro-image";
+@import "components/meta";
 
-@import "_sass/sections/index";
-@import "_sass/sections/article";
-@import "_sass/sections/page";
-@import "_sass/sections/bio";
+@import "sections/index";
+@import "sections/article";
+@import "sections/page";
+@import "sections/bio";
 
 
-@import "_sass/vendor/highlightjs";
+@import "vendor/highlightjs";
