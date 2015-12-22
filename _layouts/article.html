@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<div class="wrapper">
+	<div class="page">
+		<header class="header" id="js-header">
+			<nav class="menu">
+				<a href="#" class="menu__item">Home</a>
+				<a href="#" class="menu__item is-active">Articles</a>
+			</nav>
+		</header>
+		<div class="intro-image" id="js-parallax" style="background-image: url('/images/article1.jpg')">
+			<svg>
+				<use xlink:href="{{ site.baseurl }}/images/sprite.svg#logo" style="fill: #FFFFFF"></use>
+			</svg>
+		</div>
+		<div class="meta">
+			<div class="topics">
+				<p><span class="h-italics">Topics: </span>
+					<a href="#a" class="h-underlined">Web Development</a>,
+					<a href="#b" class="h-underlined">Standards</a>, 
+					<a href="#c" class="h-underlined">Typography</a>, 
+					<a href="#d" class="h-underlined">JavaScript</a></p>
+				</div>
+				<div class="credits">
+					<p>Image by Pedro Gandra — <a href="//unsplash.com" target="_blank">Unsplash</a></p>
+				</div>
+			</div>
+			<div class="content">
+				<aside class="table-of-contents">
+					<nav id="js-scroll">
+						<a href="#a" class="table-of-contents__item">Preface</a>
+						<a href="#b" class="table-of-contents__item">Chapter 1</a>
+						<a href="#c" class="table-of-contents__item">Cliffhanger</a>
+						<a href="#d" class="table-of-contents__item">What I learned</a>
+					</nav>
+				</aside>
+				<main class="article hyphenate">
+					{{ content }}
+				</main>
+			</div>
+	</div>
+</div>
