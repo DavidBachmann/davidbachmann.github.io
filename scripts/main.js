@@ -19,8 +19,8 @@ window.addEventListener('load', function() {
   // Image preload
   function preloadImage(url) {
    try {
-     var _img = new Image();
-     _img.src = url;
+     var img = new Image();
+     img.src = url;
    } catch (e) {
       console.log("Couldn't fetch image");
     }
@@ -75,8 +75,7 @@ window.addEventListener('load', function() {
   // Move left background-image with mouse position
   (function(){
     var img = document.getElementById('js-left-img');
-    var imgxSpeed = -0.01;
-    var imgySpeed = -0.01;
+    var imgSpeed = -0.01;
     var wx = window.innerWidth;
     var wy = window.innerHeight;
 
@@ -86,7 +85,7 @@ window.addEventListener('load', function() {
         var y = e.pageY - document.body.offsetTop;
         var newx = x - wx/2;
         var newy = y - wy/2;
-        img.style.backgroundPosition = ( ((1 - newx*imgxSpeed)+50) + "%" + ((1 - newy*imgySpeed)+50) + "%");
+        img.style.backgroundPosition = ( ((1 - newx*imgSpeed)+50) + "%" + ((1 - newy*imgSpeed)+50) + "%");
       });
     }
   })();
