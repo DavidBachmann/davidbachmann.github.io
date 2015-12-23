@@ -8,6 +8,8 @@ window.addEventListener('load', function() {
               offset: 250
           });
 
+          smoothScroll.init();
+
           // Initalize highlightjs plugin
           var block = document.querySelectorAll('.highlight > pre');
           for (var i = 0; i < block.length; i++) {
@@ -22,7 +24,7 @@ window.addEventListener('load', function() {
         if (el) {
           var elHeight = el.offsetTop;
           var fixClass = 'is-fixed';
-          function stickyScroll(e) {
+          function scroll(e) {
             if(window.pageYOffset > (elHeight)) {
               el.classList.add(fixClass);
             }
@@ -31,7 +33,8 @@ window.addEventListener('load', function() {
             }
           }
         }
-        window.addEventListener('scroll', stickyScroll, false);
+        window.addEventListener('scroll', scroll, false);
+        scroll();
       })();
 
       // Parallax effect for background images 
