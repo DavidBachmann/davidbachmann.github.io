@@ -19,11 +19,11 @@ layout: default
 		<div class="meta">
 		{% if page.tags.size > 0 %}
 		<div class="topics">
-		  <p> <span class="h-italics">Topics:</span>
+		  <p> <span class="h-italics">Tags:</span>
 		    {% for tag in page.tags %}
 		    <span>
 		      {% if site.data.tags[tag] %}
-		      <a href="{{ site.baseurl }}/tags/{{ tag }}">{{ site.data.tags[tag].name }}</a>
+		      <a href="{{ site.baseurl }}/tags/{{ tag }}">{{ site.data.tags[tag].name}}</a>
 		      {% endif %}
 		    </span>
 		    {% endfor %}
