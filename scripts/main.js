@@ -23,24 +23,22 @@ window.addEventListener('load', function() {
       selector: '#js-scroll a', // Default link selector (must use a valid CSS selector)
       activeClass: 'is-active' // Class to apply to active navigation link and it's parent list item
     });
-
+    // Initalize smoothScroll plugin
     smoothScroll.init();
-
-      // Initalize highlightjs plugin
-      var block = document.querySelectorAll('.highlight > pre');
-      for (var i = 0; i < block.length; i++) {
-        console.log(block[i]);
-        hljs.highlightBlock(block[i]);
-      }
-
+    // Initalize highlightjs plugin
+    var block = document.querySelectorAll('.highlight > pre');
+    for (var i = 0; i < block.length; i++) {
+      hljs.highlightBlock(block[i]);
+    }
   })();
+
   // Calculate scroll offset and sticky the Table of Contents
   (function(){
     var el = document.getElementById('js-scroll');
     if (el) {
       var elHeight = el.offsetTop;
       var fixClass = 'is-fixed';
-      function scroll(e) {
+      function scroll() {
         if(window.pageYOffset > (elHeight)) {
           el.classList.add(fixClass);
         }
@@ -64,7 +62,7 @@ window.addEventListener('load', function() {
     }
   })();
 
-  // Move left background image with mouse
+  // Move left background-image with mouse position
   (function(){
     var img = document.getElementById('js-left-img');
     var imgxSpeed = -0.01;
@@ -89,17 +87,14 @@ window.addEventListener('load', function() {
     var linkParent = document.getElementsByClassName("js-link-parent");
     var imgUrl = 'default';
 
-    var handleMouseOver = debounce(function(e) {
-      console.log("Mouse over");
-
+    var handleMouseOver = debounce(function() {
       var self = this;
       if (self.dataset.url) {
         img.style.backgroundImage = "url('../images/" + self.dataset.url + "-preview.jpg')";
       }
     }, 50);
 
-    var handleMouseOut = debounce(function(e) {
-      console.log("Mouse out");
+    var handleMouseOut = debounce(function() {
       img.style.backgroundImage ="url('../images/" + imgUrl + "-preview.jpg')";
     }, 50);
 
@@ -131,4 +126,5 @@ window.addEventListener('load', function() {
     }
     return nodes;
   })();
+
 });
