@@ -1,6 +1,6 @@
 window.addEventListener('load', function() {
 
-  // We need this function from UnderscoreJS
+  // Debounce from UnderscoreJS
   function debounce(func, wait, immediate) {
     var timeout;
     return function() {
@@ -14,6 +14,16 @@ window.addEventListener('load', function() {
       timeout = setTimeout(later, wait);
       if (callNow) func.apply(context, args);
     };
+  };
+
+  // Image preload
+  var preloadImage = function (url) {
+   try {
+     var _img = new Image();
+     _img.src = url;
+   } catch (e) {
+      console.log("Couldn't fetch image");
+    }
   };
 
   // Initialize things
@@ -86,7 +96,6 @@ window.addEventListener('load', function() {
     var img = document.getElementById('js-left-img');
     var linkParent = document.getElementsByClassName("js-link-parent");
     var imgUrl = 'default';
-
     var handleMouseOver = debounce(function() {
       var self = this;
       if (self.dataset.url) {
@@ -101,30 +110,8 @@ window.addEventListener('load', function() {
     for (var i = 0; i < linkParent.length; i++) {
       linkParent[i].addEventListener('mouseover', handleMouseOver, true);
       linkParent[i].addEventListener('mouseout', handleMouseOut, true);
+      preloadImage("../images/" + linkParent[i].dataset.url + "-preview.jpg");
     }
-  })();
-
-  // Async load images by pazguille
-  (function aload(nodes){
-    'use strict';
-
-    nodes = nodes || window.document.querySelectorAll('[data-aload]');
-
-    if (nodes.length === undefined) {
-      nodes = [nodes];
-    }
-
-    var i = 0;
-    var len = nodes.length;
-    var node;
-
-    for (i; i < len; i += 1) {
-      node = nodes[i];
-      console.log(nodes[i]);
-      node[ node.tagName !== 'LINK' ? 'src' : 'href' ] = node.getAttribute('data-aload');
-      node.removeAttribute('data-aload');
-    }
-    return nodes;
   })();
 
 });
