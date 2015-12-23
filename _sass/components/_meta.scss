@@ -4,6 +4,9 @@
 		flex: 0 1 60%;
 		font-size: 0.8rem;	
 		color: lighten(color(_text), 20%);	
+		a {
+			text-decoration: underline;
+		}
 
 	}
 	.credits {

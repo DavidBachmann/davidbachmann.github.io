@@ -1,6 +1,7 @@
 ---
 layout: article
 title: How many articles can I fit here?
+imageFileName: article1
 ---
 
 Hello & good day

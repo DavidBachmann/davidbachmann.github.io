@@ -9,7 +9,12 @@ window.addEventListener('load', function() {
           });
 
           // Initalize highlightjs plugin
-          // Todo: This is not working. hljs.initHighlightingOnLoad();
+          var block = document.querySelectorAll('.highlight > pre');
+          for (var i = 0; i < block.length; i++) {
+            console.log(block[i]);
+            hljs.highlightBlock(block[i]);
+          }
+
      })();
       // Calculate scroll offset and sticky the Table of Contents
       (function(){
