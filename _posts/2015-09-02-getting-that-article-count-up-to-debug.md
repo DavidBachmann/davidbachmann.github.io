@@ -3,9 +3,9 @@ layout: article
 title: Getting that article count up to debug the layout
 tags: [jekyll, javascript, css]
 credits: 
-  name: John
-  website: John.com
-  directLink: john.com
+  name: Pedro Gandra
+  website: Unsplash
+  directLink: unsplash.com
 ---
 
 Hello & good day

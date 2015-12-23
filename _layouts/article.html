@@ -24,8 +24,6 @@ layout: default
 		    <span>
 		      {% if site.data.tags[tag] %}
 		      <a href="{{ site.baseurl }}/tags/{{ tag }}">{{ site.data.tags[tag].name }}</a>
-		      {% else %}
-		      <a href="javascript:void(0);" class="disabled">{{ tag }}</a>
 		      {% endif %}
 		    </span>
 		    {% endfor %}
@@ -41,6 +39,7 @@ layout: default
 
 		</div>
 			<div class="content">
+			{% include toc.html %}
 				<main class="article hyphenate">
 					{{ content }}
 				</main>

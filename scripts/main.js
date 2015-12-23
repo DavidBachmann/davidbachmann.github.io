@@ -2,11 +2,11 @@ window.addEventListener('load', function() {
       // Initialize things
       (function(){
         // Initalize gumshoe plugin
-          gumshoe.init({
-              selector: '#js-scroll a', // Default link selector (must use a valid CSS selector)
-              activeClass: 'is-active', // Class to apply to active navigation link and it's parent list item
-              offset: 250
-          });
+          // gumshoe.init({
+          //     selector: '#js-scroll a', // Default link selector (must use a valid CSS selector)
+          //     activeClass: 'is-active', // Class to apply to active navigation link and it's parent list item
+          //     offset: 250
+          // });
 
           // Initalize highlightjs plugin
           var block = document.querySelectorAll('.highlight > pre');
