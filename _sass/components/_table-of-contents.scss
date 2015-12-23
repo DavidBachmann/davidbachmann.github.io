@@ -22,6 +22,7 @@
     color: color(_text);
     line-height: 2;
     text-decoration: none;
+    text-transform: capitalize;
     &.is-active {
       //color: darken(color(_text), 10%);
       color: color(_red);
