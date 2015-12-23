@@ -17,7 +17,7 @@ window.addEventListener('load', function() {
   };
 
   // Image preload
-  var preloadImage = function (url) {
+  function preloadImage(url) {
    try {
      var _img = new Image();
      _img.src = url;
