@@ -1,7 +1,6 @@
 ---
 layout: article
 title: Code & Coffee for a better health
-imageFileName: article2
 ---
 
 Hello & good day

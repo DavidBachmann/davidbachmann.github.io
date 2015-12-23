@@ -1,7 +1,11 @@
 ---
 layout: article
 title: Getting that article count up to debug the layout
-tags: Tag1, Tag2, Tag3, Tag4
+tags: [jekyll, javascript, css]
+credits: 
+  name: John
+  website: John.com
+  directLink: john.com
 ---
 
 Hello & good day

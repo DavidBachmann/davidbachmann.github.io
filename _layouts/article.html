@@ -15,20 +15,31 @@ layout: default
 				<use xlink:href="{{ site.baseurl }}/images/sprite.svg#logo" style="fill: #FFFFFF"></use>
 			</svg>
 		</div>
+		
 		<div class="meta">
-			<div class="topics">
-				<p><span class="h-italics">Topics:</span>
-				{% for tag in post.tags %} 
-				<a href="#a">{{ tag }}</a>
-				{% endfor %}
-				{% for tag in post.tags %}
-				<td>{{ tag }}</td>
-				{% endfor %}
-				</div>
-				<div class="credits">
-					<p>Image by Pedro Gandra — <a href="//unsplash.com" target="_blank">Unsplash</a></p>
-				</div>
-			</div>
+		{% if page.tags.size > 0 %}
+		<div class="topics">
+		  <p> <span class="h-italics">Topics:</span>
+		    {% for tag in page.tags %}
+		    <span>
+		      {% if site.data.tags[tag] %}
+		      <a href="{{ site.baseurl }}/tags/{{ tag }}">{{ site.data.tags[tag].name }}</a>
+		      {% else %}
+		      <a href="javascript:void(0);" class="disabled">{{ tag }}</a>
+		      {% endif %}
+		    </span>
+		    {% endfor %}
+		    </p>
+		</div>
+		{% endif %}
+		
+		{% if page.credits %}
+		<div class="credits">
+			<p>Image by {{page.credits.name}} — <a href="//{{ page.credits.directLink }}" target="_blank">{{ page.credits.website }}</a></p>
+		</div>
+		{% endif %}
+
+		</div>
 			<div class="content">
 				<main class="article hyphenate">
 					{{ content }}
