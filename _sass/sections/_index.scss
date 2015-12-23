@@ -12,7 +12,7 @@
 		display: block;
 		position: absolute;
 		top: 1rem;
-		right: 2rem;
+		right: 5vw;
 
 	}
 
@@ -37,11 +37,12 @@
 		display: flex;
 		flex: 0 1 50%;
 		align-items: center;
+		justify-content: center;
 		text-align: right;
 		position: relative;
 		z-index: 1;
 		background: color(_offwhite);
-		padding-right: 4rem;
+		padding-right: 5vw;
 		&::before {
 			content: '';
 			width: 100%;
@@ -53,7 +54,6 @@
 			z-index: -1;
 		}
 		.latest-articles {
-			width: 90%;
 			.single-article {
 				display: block;
 				padding-bottom: 1rem;
