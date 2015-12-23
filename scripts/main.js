@@ -76,11 +76,11 @@ window.addEventListener('load', function() {
               linkParent[i].addEventListener('mouseover', function() {
                   var self = this;
                   	if (self.dataset.url) {
-                  		img.style.backgroundImage = "url('../images/" + self.dataset.url + ".jpg')";
+                  		img.style.backgroundImage = "url('../images/" + self.dataset.url + "-preview.jpg')";
                   	}
               });
               linkParent[i].addEventListener('mouseout', function() {
-                  	img.style.backgroundImage ="url('../images/" + imgUrl + ".jpg')";
+                  	img.style.backgroundImage ="url('../images/" + imgUrl + "-preview.jpg')";
               });
           }
 
