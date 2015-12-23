@@ -1,6 +1,6 @@
 ---
 layout: article
-title: how many articles can I fit here?
+title: How many articles can I fit here?
 ---
 
 Hello & good day
