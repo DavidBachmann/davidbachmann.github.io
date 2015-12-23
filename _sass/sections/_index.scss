@@ -55,7 +55,9 @@
 		.latest-articles {
 			width: 90%;
 			line-height: 1;
+			clear: both;
 			.single-article {
+				float: right;
 				display: inline-block;
 				padding-bottom: 1rem;
 				&:hover {
