@@ -54,7 +54,8 @@
 		}
 		.latest-articles {
 			width: 90%;
-			line-height: 1;
+			line-height: 0;
+			white-space: pre-line;
 			.single-article {
 				display: inline-block;
 				padding-bottom: 1rem;
