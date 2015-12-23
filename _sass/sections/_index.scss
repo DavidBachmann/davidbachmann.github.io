@@ -54,8 +54,8 @@
 		}
 		.latest-articles {
 			width: 90%;
-			line-height: 1;
-			clear: both;
+			line-height: 0;
+			white-space: pre-line;
 			.single-article {
 				float: right;
 				display: inline-block;
