@@ -41,7 +41,7 @@
 		position: relative;
 		z-index: 1;
 		background: color(_offwhite);
-		padding: 0 4rem;
+		padding-right: 4rem;
 		&::before {
 			content: '';
 			width: 100%;
@@ -55,7 +55,7 @@
 		.latest-articles {
 			width: 90%;
 			.single-article {
-				display: inline-block;
+				display: block;
 				padding-bottom: 1rem;
 				&:hover {
 					.single-article__title {
