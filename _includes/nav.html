@@ -10,6 +10,11 @@
     	{% else %} class="menu__item" 
     	{% endif %}>About
     </a>
+    <a href='/articles' 
+        {% if current[1] == 'articles' %}class='menu__item is-active'
+        {% else %} class="menu__item" 
+        {% endif %}>Articles
+    </a>
     <a href='/contact' 
     	{% if current[1] == 'contact' %}class='menu__item is-active'
     	{% else %} class="menu__item" 
