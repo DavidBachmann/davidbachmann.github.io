@@ -114,4 +114,9 @@ window.addEventListener('load', function() {
     }
   })();
 
+  (function(){
+    preloadImage("../images/about-masked-min.png");
+    preloadImage("../images/about-def.jpeg");
+  })();
+
 });
