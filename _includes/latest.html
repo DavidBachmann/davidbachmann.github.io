@@ -4,7 +4,7 @@
         <a href="{{ site.baseurl }}{{ post.url }}" class="single-article__title">
           {{ post.title }}
         </a>
-        <p class="single-article__date">— {{ post.date | date_to_string }}</p>
+        <p class="single-article__date">— {{ post.date | date_to_string | date: "%e %B %Y" }}</p>
     </div>
     {% endfor %}
 </div>

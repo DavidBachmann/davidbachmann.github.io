@@ -30,8 +30,9 @@ window.addEventListener('load', function() {
   (function(){
     // Initalize gumshoe plugin
     gumshoe.init({
-      selector: '#js-scroll a', // Default link selector (must use a valid CSS selector)
-      activeClass: 'is-active' // Class to apply to active navigation link and it's parent list item
+      selector: '#js-scroll a',
+      activeClass: 'is-active',
+      offset: 10
     });
     // Initalize smoothScroll plugin
     smoothScroll.init();

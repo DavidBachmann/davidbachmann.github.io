@@ -26,6 +26,9 @@
     &.is-active {
       //color: darken(color(_text), 10%);
       color: color(_red);
+      &:hover {
+        color: color(_red);
+      }
     }
     &:hover {
       color: darken(color(_text), 10%);

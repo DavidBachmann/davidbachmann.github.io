@@ -1,0 +1,9 @@
+[about] {
+	width: 100%;
+	max-width: 100vw;
+	.about-wrapper {
+		display: flex;
+		flex-direction: row;
+		height: 100%;
+	}
+}

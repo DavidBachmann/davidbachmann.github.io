@@ -1,7 +1,13 @@
+.header {
+    width: 100%;
+    position: relative;
+}
+
 .menu {
     display: flex;
     flex: auto;
     justify-content: flex-end;
+    padding: 2rem 0;
     &__item {
     margin-right: 1rem;
     color: color(_text);

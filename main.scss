@@ -10,17 +10,16 @@
 @import "base/typography";
 @import "base/helpers";
 
+@import "objects/page";
+@import "objects/article";
+
 @import "components/menu";
 @import "components/table-of-contents";
 @import "components/content";
-@import "components/header";
 @import "components/intro-image";
 @import "components/meta";
 
 @import "sections/index";
-@import "sections/article";
-@import "sections/page";
-@import "sections/bio";
-
+@import "sections/about";
 
 @import "vendor/highlightjs";

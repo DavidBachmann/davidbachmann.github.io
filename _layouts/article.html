@@ -4,14 +4,9 @@ layout: default
 
 <div class="wrapper">
 	<div class="page">
-		<header class="header" id="js-header">
-			<nav class="menu">
-				<a href="/" class="menu__item">Home</a>
-				<a href="#" class="menu__item">About</a>
-				<a href="#" class="menu__item">Archive</a>
-				<a href="#" class="menu__item">Contact</a>
-			</nav>
-		</header>
+	<header class="header" id="js-header">
+		{% include nav.html %}
+	</header>
 		<div data-aload class="intro-image" id="js-parallax" style="background-image: url('/images{{page.id}}.jpg')">
 			<a href="/">
 				<svg class="intro-image__logo">

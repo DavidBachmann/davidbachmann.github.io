@@ -1,20 +1,14 @@
 ---
 layout: default
 ---
+
 <div index class="wrapper">
 	<div class="index-wrapper">
 	    <div class="left-side" id="js-left-img" style="background-image: url('../images/default-preview.jpg');">           
 	      {% include svg.html %}
 	    </div>
 	    <div class="right-side">
-	    <header>
-	    	<nav class="menu">
-	    		<a href="/" class="menu__item is-active">Home</a>
-	    		<a href="#" class="menu__item">About</a>
-	    		<a href="#" class="menu__item">Archive</a>
-	    		<a href="#" class="menu__item">Contact</a>
-	    	</nav>
-	    </header>
+	    	{% include nav.html %}
 	   	{% include latest.html %}
 	    </div>
 	</div>
