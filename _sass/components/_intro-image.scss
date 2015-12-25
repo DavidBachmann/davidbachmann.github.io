@@ -13,10 +13,9 @@
 		width: 155px;
 		> use {
 			fill: color(_offwhite);
-			mix-blend-mode: overlay;
-
 		}
 		&:hover > use {
-			mix-blend-mode: initial;		}
+			fill: color(_white);
+		}
 	}
 }
