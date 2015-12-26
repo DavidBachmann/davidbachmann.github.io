@@ -52,7 +52,7 @@
 		}
 		.social {
 			margin-top: 2rem;
-			width: 18%;
+			width: auto;
 			display: flex;
 			justify-content: space-between;
 			svg {
@@ -61,6 +61,12 @@
 				opacity: 0.8;
 				&:hover {
 					opacity: 1;
+				}
+			}
+			a {
+				margin-right: 0.5rem;
+				&:last-child {
+					margin-right: 0;
 				}
 			}
 		}
@@ -84,6 +90,7 @@
 			right: 0;
 			background-image: url('../images/about-masked.png');
 			background-size: cover;
+			background-position: center;
 			z-index: -1;
 		}
 	}

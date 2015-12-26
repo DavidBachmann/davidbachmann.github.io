@@ -45,40 +45,5 @@
 			transform: skew(10deg);
 			z-index: -1;
 		}
-		.latest-articles {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: flex-end;
-			height: 100%;
-			margin-top: 2rem;			
-			.single-article {
-				display: block;
-				padding-bottom: 1.5rem;
-				&:hover {
-					.single-article__title {
-						color: color(_red);
-					}
-				}
-				&__title {
-					font-family: "Playfair Display", sans-serif;
-					font-size: rem(28px);
-					font-weight: 400;
-					margin-top: 2rem;
-					&:hover {
-						color: color(_red);
-					}
-				}
-				&__date {
-					font-family: "Source Sans Pro";
-					font-weight: 200;
-					font-style: italic;
-					margin-top: 0.5rem;
-					//margin-bottom: 1rem;
-					color: lighten(color(_text), 40%);
-				}
-			}
-			
-		}
 	}
 }
