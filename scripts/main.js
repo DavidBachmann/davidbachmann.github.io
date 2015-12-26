@@ -141,6 +141,7 @@ window.addEventListener('load', function() {
   (function(){
     preloadImage("../images/about-masked-min.png");
     preloadImage("../images/1.jpg");
+    preloadImage("../images/leo.jpg");
   })();
 
 });
