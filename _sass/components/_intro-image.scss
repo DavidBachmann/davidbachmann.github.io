@@ -11,6 +11,10 @@
 	align-items: center;
 	&__logo {
 		width: 155px;
+		opacity: 0.9;
+		&:hover {
+			opacity: 1;
+		}
 		> use {
 			fill: color(_offwhite);
 		}

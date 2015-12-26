@@ -59,6 +59,7 @@ h6 {
     margin-bottom: 0;
     line-height: $leading;
     text-shadow: 1px 1px 0 color(_white);
+    text-rendering: optimizeLegibility;
 }
 h1 {
     font-family: "Playfair Display", sans-serif;
@@ -123,13 +124,6 @@ a {
     color: currentColor;
 }
 
-// Leading paragraph text
-
-.lead {
-    font-size: $scale * 1rem;
-}
-// Hug a the block above you
-
-.hug {
-    margin-top: 0;
+figure {
+  margin: 0;
 }

@@ -10,7 +10,7 @@ html, body {
   height: 100%;
 }
 body {
-	background: color(_white);
+  background: color(_white);
   padding: 1vw;
 }
 
@@ -20,12 +20,7 @@ body {
 	background: color(_offwhite);
 }
 
-figure {
-  margin: 0;
-}
-
-
-code {
+pre {
   &::-webkit-scrollbar {
     width: 8px;
     height: 8px;
