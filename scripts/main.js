@@ -62,7 +62,7 @@ window.addEventListener('load', function() {
     scroll();
   })();
 
-  // Parallax effect for background images 
+  // Parallax effect for article background images 
   (function(){
     window.onscroll = function() {
       var speed = 20;
@@ -91,7 +91,7 @@ window.addEventListener('load', function() {
     }
   })();
 
-  // Switch out background image on link hover
+  // Switch out Index background image on link hover
   (function(){
     var img = document.getElementById('js-left-img');
     var linkParent = document.getElementsByClassName("js-link-parent");
@@ -114,9 +114,33 @@ window.addEventListener('load', function() {
     }
   })();
 
+  // Switch out About background image on link hover
   (function(){
-    preloadImage("../images/about-masked-min.png");
-    preloadImage("../images/about-def.jpeg");
+    var img = document.getElementById('js-right-img');
+    var link = document.getElementsByClassName("js-hover");
+    var imgUrl = '1';
+    var handleMouseOver = debounce(function() {
+      var self = this;
+      if (self.dataset.url) {
+        img.style.backgroundImage = "url('../images/" + self.dataset.url + ".jpg')";
+        img.style.backgroundSize = self.dataset.size + "%";
+      }
+    }, 50);
+
+    var handleMouseOut = debounce(function() {
+      img.style.backgroundImage ="url('../images/" + imgUrl + ".jpg')";
+      img.style.backgroundSize = "cover";
+    }, 50);
+
+    for (var i = 0; i < link.length; i++) {
+      link[i].addEventListener('mouseover', handleMouseOver, true);
+      link[i].addEventListener('mouseout', handleMouseOut, true);
+    }
+  })();
+
+  (function(){
+  //preloadImage("../images/about-masked-min.png");
+  //preloadImage("../images/about-def.jpeg");
   })();
 
 });

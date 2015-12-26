@@ -40,6 +40,13 @@
 			transform: skew(-10deg);
 			z-index: -1;
 		}
+		.js-hover {
+			cursor: pointer;
+			background-image: url("../images/wave.png");
+			background-repeat: repeat-x;
+			background-position: 0px 100%;
+			padding-bottom: 0.2rem;
+		}
 	}
 	.right-side {
 		flex: 0 1 50%;
@@ -48,6 +55,7 @@
 		z-index: 1;
 		background: color(_offwhite);
 		padding-right: 5vw;
+		will-change: background-image, background-position;
 		&::before {
 			content: '';
 			width: 100%;
@@ -56,12 +64,14 @@
 			top: 0;
 			right: 0;
 			background-image: url('../images/about-masked-min.png');
+			background-size: cover;
 			z-index: -1;
+			will-change: background-image, background-position;
 		}
 	}
 
 	#js-right-img {
-		animation: scroll 120s linear alternate infinite;
+		animation: scroll 35s linear alternate infinite;
 	}
 }
 
