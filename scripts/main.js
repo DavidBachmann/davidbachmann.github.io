@@ -79,7 +79,7 @@ window.addEventListener('load', function() {
     }
   })();
 
-  // Move left background-image with mouse position
+  // Move Index background-image with mouse position
   (function(){
     var img = document.getElementById('js-left-img');
     var imgSpeed = -0.01;
@@ -97,31 +97,7 @@ window.addEventListener('load', function() {
     }
   })();
 
-  // Switch out Index background image on link hover
-  // Thinking about retiring this function.
-  // (function(){
-  //   var img = document.getElementById('js-left-img');
-  //   var linkParent = document.getElementsByClassName("js-link-parent");
-  //   var imgUrl = 'default';
-  //   var handleMouseOver = debounce(function() {
-  //     var self = this;
-  //     if (self.dataset.url) {
-  //       img.style.backgroundImage = "url('../images/" + self.dataset.url + "-preview.jpg')";
-  //     }
-  //   }, 50);
-
-  //   var handleMouseOut = debounce(function() {
-  //     img.style.backgroundImage ="url('../images/" + imgUrl + "-preview.jpg')";
-  //   }, 50);
-
-  //   for (var i = 0; i < linkParent.length; i++) {
-  //     linkParent[i].addEventListener('mouseover', handleMouseOver, true);
-  //     linkParent[i].addEventListener('mouseout', handleMouseOut, true);
-  //     preloadImage("../images/" + linkParent[i].dataset.url + "-preview.jpg");
-  //   }
-  // })();
-
-  // Switch out About background image on link hover
+  // Switch out About background-image on link hover
   (function(){
       var img = document.getElementById('js-right-img');
       var link = document.getElementsByClassName("js-hover");
