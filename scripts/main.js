@@ -118,9 +118,10 @@ window.addEventListener('load', function() {
   // Switch out About background image on link hover
   (function(){
 
-      preloadImage("../images/about-masked-min.png");
+      preloadImage("../images/about-masked.png");
       preloadImage("../images/1.jpg");
       preloadImage("../images/leo.jpg");
+      preloadImage("../images/unnur.jpg");
 
       var img = document.getElementById('js-right-img');
       var link = document.getElementsByClassName("js-hover");
