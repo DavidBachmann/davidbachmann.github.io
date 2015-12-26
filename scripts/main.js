@@ -92,35 +92,42 @@ window.addEventListener('load', function() {
   })();
 
   // Switch out Index background image on link hover
-  (function(){
-    var img = document.getElementById('js-left-img');
-    var linkParent = document.getElementsByClassName("js-link-parent");
-    var imgUrl = 'default';
-    var handleMouseOver = debounce(function() {
-      var self = this;
-      if (self.dataset.url) {
-        img.style.backgroundImage = "url('../images/" + self.dataset.url + "-preview.jpg')";
-      }
-    }, 50);
+  // Thinking about retiring this function.
+  // (function(){
+  //   var img = document.getElementById('js-left-img');
+  //   var linkParent = document.getElementsByClassName("js-link-parent");
+  //   var imgUrl = 'default';
+  //   var handleMouseOver = debounce(function() {
+  //     var self = this;
+  //     if (self.dataset.url) {
+  //       img.style.backgroundImage = "url('../images/" + self.dataset.url + "-preview.jpg')";
+  //     }
+  //   }, 50);
 
-    var handleMouseOut = debounce(function() {
-      img.style.backgroundImage ="url('../images/" + imgUrl + "-preview.jpg')";
-    }, 50);
+  //   var handleMouseOut = debounce(function() {
+  //     img.style.backgroundImage ="url('../images/" + imgUrl + "-preview.jpg')";
+  //   }, 50);
 
-    for (var i = 0; i < linkParent.length; i++) {
-      linkParent[i].addEventListener('mouseover', handleMouseOver, true);
-      linkParent[i].addEventListener('mouseout', handleMouseOut, true);
-      preloadImage("../images/" + linkParent[i].dataset.url + "-preview.jpg");
-    }
-  })();
+  //   for (var i = 0; i < linkParent.length; i++) {
+  //     linkParent[i].addEventListener('mouseover', handleMouseOver, true);
+  //     linkParent[i].addEventListener('mouseout', handleMouseOut, true);
+  //     preloadImage("../images/" + linkParent[i].dataset.url + "-preview.jpg");
+  //   }
+  // })();
 
   // Switch out About background image on link hover
   (function(){
-    var img = document.getElementById('js-right-img');
-    var link = document.getElementsByClassName("js-hover");
-    var imgUrl = '1';
-    var handleMouseOver = debounce(function() {
+
+      preloadImage("../images/about-masked-min.png");
+      preloadImage("../images/1.jpg");
+      preloadImage("../images/leo.jpg");
+
+      var img = document.getElementById('js-right-img');
+      var link = document.getElementsByClassName("js-hover");
+      var imgUrl = '1';
+      var handleMouseOver = debounce(function() {
       var self = this;
+
       if (self.dataset.url) {
         img.style.backgroundImage = "url('../images/" + self.dataset.url + ".jpg')";
         img.classList.remove('js-scroll');
@@ -137,11 +144,4 @@ window.addEventListener('load', function() {
       link[i].addEventListener('mouseout', handleMouseOut, true);
     }
   })();
-
-  (function(){
-    preloadImage("../images/about-masked-min.png");
-    preloadImage("../images/1.jpg");
-    preloadImage("../images/leo.jpg");
-  })();
-
 });

@@ -46,6 +46,23 @@
 			background-repeat: repeat-x;
 			background-position: 0px 100%;
 			padding-bottom: 0.2rem;
+			&:hover {
+				color: color(_red);
+			}
+		}
+		.social {
+			margin-top: 1rem;
+			width: 18%;
+			display: flex;
+			justify-content: space-between;
+			svg {
+				width: 2rem;
+				height: 2rem;
+				opacity: 0.8;
+				&:hover {
+					opacity: 1;
+				}
+			}
 		}
 	}
 	.right-side {

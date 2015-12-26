@@ -4,9 +4,8 @@
 }
 
 .menu {
-    display: flex;
-    flex: auto;
-    justify-content: flex-end;
+    text-align: right;
+    flex: 0 auto;
     padding: 2rem 0;
     &__item {
     margin-right: 1rem;
