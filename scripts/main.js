@@ -16,7 +16,7 @@ window.addEventListener('load', function() {
     };
   };
 
-  // Image preload
+  // Image preload function
   function preloadImage(url) {
    try {
      var img = new Image();
@@ -25,6 +25,12 @@ window.addEventListener('load', function() {
       console.log("Couldn't fetch image");
     }
   };
+  // Image preload
+  preloadImage("../images/about-masked.png");
+  preloadImage("../images/1.jpg");
+  preloadImage("../images/leo.jpg");
+  preloadImage("../images/unnur.jpg");
+  preloadImage("../images/default.jpg");
 
   // Initialize things
   (function(){
@@ -117,12 +123,6 @@ window.addEventListener('load', function() {
 
   // Switch out About background image on link hover
   (function(){
-
-      preloadImage("../images/about-masked.png");
-      preloadImage("../images/1.jpg");
-      preloadImage("../images/leo.jpg");
-      preloadImage("../images/unnur.jpg");
-
       var img = document.getElementById('js-right-img');
       var link = document.getElementsByClassName("js-hover");
       var imgUrl = '1';
