@@ -73,7 +73,8 @@
 		background: color(_offwhite);
 		padding-right: 5vw;
 		background-size: cover;
-		will-change: background-image, background-position;
+		will-change: background;
+		transform: translate3d(0,0,0);
 		&::before {
 			content: '';
 			width: 100%;
@@ -84,7 +85,6 @@
 			background-image: url('../images/about-masked-min.png');
 			background-size: cover;
 			z-index: -1;
-			will-change: background-image, background-position;
 		}
 	}
 

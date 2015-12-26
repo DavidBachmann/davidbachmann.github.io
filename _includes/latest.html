@@ -1,6 +1,6 @@
 <div class="latest-articles">
     {% for post in site.posts limit:6 %}
-    <div class="single-article js-link-parent" data-url={{ post.url | remove: "/" }}>
+    <div class="single-article js-link-parent">
         <a href="{{ site.baseurl }}{{ post.url }}" class="single-article__title">
           {{ post.title }}
         </a>
