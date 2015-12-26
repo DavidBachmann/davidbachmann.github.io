@@ -55,6 +55,7 @@
 		z-index: 1;
 		background: color(_offwhite);
 		padding-right: 5vw;
+		background-size: cover;
 		will-change: background-image, background-position;
 		&::before {
 			content: '';
@@ -70,7 +71,7 @@
 		}
 	}
 
-	#js-right-img {
+	.js-scroll {
 		animation: scroll 35s linear alternate infinite;
 	}
 }

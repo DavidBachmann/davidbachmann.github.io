@@ -55,14 +55,13 @@ h3,
 h4,
 h5,
 h6 {
-    /* Change heading typefaces here */
-    font-family: "Playfair Display", sans-serif;
     margin-top: $leading;
     margin-bottom: 0;
     line-height: $leading;
     text-shadow: 1px 1px 0 color(_white);
 }
 h1 {
+    font-family: "Playfair Display", sans-serif;
     font-size: 3 * $scale * 1rem;
     line-height: 3 * $leading;
     margin-top: 2 * $leading;
@@ -71,6 +70,7 @@ h1 {
     }
 }
 h2 {
+    font-family: "Playfair Display", sans-serif;
     font-size: 2 * $scale * 1rem;
     line-height: 2 * $leading;
     margin-top: 2 * $leading;
@@ -79,15 +79,23 @@ h2 {
     }
 }
 h3 {
+    font-family: "Vollkorn", sans-serif;
+    font-weight: 400;
     font-size: 1 * $scale * 1rem;
 }
 h4 {
+    font-family: "Vollkorn", sans-serif;
+    font-weight: 400;
     font-size: $scale / 2 * 1rem;
 }
 h5 {
+    font-family: "Vollkorn", sans-serif;
+    font-weight: 400;
     font-size: $scale / 3 * 1rem;
 }
 h6 {
+    font-family: "Vollkorn", sans-serif;
+    font-weight: 400;
     font-size: $scale / 4 * 1rem;
 }
 // Tables

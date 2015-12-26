@@ -123,13 +123,13 @@ window.addEventListener('load', function() {
       var self = this;
       if (self.dataset.url) {
         img.style.backgroundImage = "url('../images/" + self.dataset.url + ".jpg')";
-        img.style.backgroundSize = self.dataset.size + "%";
+        img.classList.remove('js-scroll');
       }
     }, 50);
 
     var handleMouseOut = debounce(function() {
       img.style.backgroundImage ="url('../images/" + imgUrl + ".jpg')";
-      img.style.backgroundSize = "cover";
+      img.classList.add('js-scroll');
     }, 50);
 
     for (var i = 0; i < link.length; i++) {
@@ -139,8 +139,8 @@ window.addEventListener('load', function() {
   })();
 
   (function(){
-  //preloadImage("../images/about-masked-min.png");
-  //preloadImage("../images/about-def.jpeg");
+    preloadImage("../images/about-masked-min.png");
+    preloadImage("../images/1.jpg");
   })();
 
 });
