@@ -89,13 +89,13 @@
 	}
 
 	.js-scroll {
-		animation: scroll 15s linear alternate infinite;
+		animation: scroll 18s linear alternate infinite;
 	}
 }
 
 @keyframes scroll {
 	0% {
-		background-position: 70% center; 
+		background-position: 100% center; 
 	} 
 	100% {
 		background-position: 0% center; 
