@@ -2,7 +2,7 @@
 {% if page.toc %}
 	<nav id="js-scroll">
 	{% for items in page.toc %}
-		<a data-scroll href="#{{ items }}" class="table-of-contents__item">{{ items | replace: '-', ' ' | capitalize  }}</a>
+		<a data-scroll href="#{{ items }}" class="table-of-contents__item">{{ items | upcase | replace: '-', ' ' }}</a>
 	{% endfor %}	
 	</nav>
 	{% endif %}

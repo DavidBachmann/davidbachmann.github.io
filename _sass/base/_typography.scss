@@ -4,7 +4,7 @@ $baseLineHeight: 1.5; // how large the line height is as a multiple of font size
 $leading: $baseLineHeight * 1rem;
 // Rate of growth for headings
 // I actually like this to be slightly smaller then the leading. Makes for tight headings.
-$scale: 1.414;
+$scale: 1.114;
 
 // Setup
 
@@ -28,6 +28,10 @@ p {
     line-height: $leading;
     margin-top: $leading;
     margin-bottom: 0;
+}
+ul {
+    list-style-type: circle;
+    list-style-image: url('../images/point.svg');
 }
 ul,
 ol {
