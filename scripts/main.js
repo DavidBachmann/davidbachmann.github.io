@@ -38,7 +38,7 @@ window.addEventListener('load', function() {
     gumshoe.init({
       selector: '#js-scroll a',
       activeClass: 'is-active',
-      offset: 10
+      offset: 0
     });
     // Initalize smoothScroll plugin
     smoothScroll.init();

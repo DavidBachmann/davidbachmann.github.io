@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Maintainable CSS
-tags: [css]
+tags: [css, web development]
 credits: 
   name: Negative Space
   website: Unsplash
@@ -153,5 +153,5 @@ Hopefully you now have a good idea of how to better organize and maintain your s
 
 - [CSS Guidelines by Harry Roberts](http://cssguidelin.es){:target="_blank"}
 - [Modular CSS with Sass and BEM](http://www.mathayward.com/modular-css-with-sass-and-bem){:target="_blank"}
-- [EM and SMACSS: Advice From Developers Who’ve Been There](http://www.sitepoint.com/bem-smacss-advice-from-developers){:target="_blank"}
+- [BEM and SMACSS: Advice From Developers Who’ve Been There](http://www.sitepoint.com/bem-smacss-advice-from-developers){:target="_blank"}
 - [Battling BEM – 5 common problems and how to avoid them](https://medium.com/fed-or-dead/battling-bem-5-common-problems-and-how-to-avoid-them-5bbd23dee319){:target="_blank"}
