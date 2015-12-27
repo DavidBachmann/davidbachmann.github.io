@@ -107,13 +107,11 @@ window.addEventListener('load', function() {
 
       if (self.dataset.url) {
         img.style.backgroundImage = "url('../images/" + self.dataset.url + ".jpg')";
-        img.classList.remove('js-scroll');
       }
     }, 50);
 
     var handleMouseOut = debounce(function() {
       img.style.backgroundImage ="url('../images/" + imgUrl + ".jpg')";
-      img.classList.add('js-scroll');
     }, 50);
 
     for (var i = 0; i < link.length; i++) {

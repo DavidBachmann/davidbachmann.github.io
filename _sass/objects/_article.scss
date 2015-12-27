@@ -8,26 +8,6 @@
   	}
   }
   a {
-    box-shadow: 0 1px 0 rgba(color(_text), 0.6);
-    &:hover {
-      position: relative;
-      box-shadow: 0 1px 0 color(_red);
-      color: color(_red);
-      &:before {
-        content: (attr(href));
-        background: white;
-        padding: 4px 8px;
-        position: absolute;
-        left: 0;
-        bottom: 100%;
-        white-space: nowrap;
-        z-index: 20px;
-        border-radius: 5px;
-        box-shadow: 0px 0px 4px #222;
-        text-indent: 0;
-        background: color(_offwhite);
-        color: #333;
-      }
-    }
+    @extend %pop;
   }
 }
