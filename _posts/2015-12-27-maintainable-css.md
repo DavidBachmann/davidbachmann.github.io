@@ -11,7 +11,7 @@ toc: [maintainable-css, bem, namespaces, scoping, project-structure, moving-on]
 
 #Maintainable CSS
 
-CSS's biggest pitfalls is that, by default, every style that we write applies globally to our whole project. In large web applications naming collisions are guaranteed to happen if you're not being careful and your CSS can quickly turn into a maintenance nightmare. Making changes to a single class can easily have unwanted and even catastropic effects somewhere else in your application so developers opt to add more and more rules to the stylesheet, making the codebase larger and more confusing. Luckily this way of working with CSS is becoming a thing of the past now that people realize how important a strict and maintainable CSS codebase actually is. Nowadays we have a few weapons in our arsenal that are designed to combat this. I will attempt to quickly cover the essentials of how to write maintainable CSS for large projects. I will be using the [Sass](http://sass-lang.com){:target="_blank"} preprocessor, the preprocessor of my choice, to demonstrate these techniques. If you prefer regular CSS, or another preprocessor, you should still be able to get something useful from this article.
+CSS's biggest pitfalls is that, by default, every style that we write applies globally to our whole project. In large web applications naming collisions are guaranteed to happen if you're not being careful and your CSS can quickly turn into a maintenance nightmare. Making changes to a single class name can easily have unwanted and even catastropic effects somewhere else in your application. Because of this developers opt to add more and more rules to the stylesheet, making the codebase larger and more confusing. Nowadays we have a few weapons in our arsenal that are designed to combat these problems. I will attempt to quickly cover the essentials of how to write maintainable CSS for large projects. I will be using the [Sass](http://sass-lang.com){:target="_blank"} preprocessor, the preprocessor of my choice, to demonstrate these techniques. If you prefer regular CSS, or another preprocessor, you should still be able to get something useful out of this article.
 
 BEM
 ---
@@ -76,7 +76,7 @@ Each team gets their own prefix, in our example *PDS* (for an imaginary *Player 
 Project structure
 ---
 
-The last thing I want to mention is the importance of a good project structure. This goes beyond CSS but ties nicely with the philosphy of both BEM and namespaces. If a developer wants to change the slideshow component (s)he should be able to go into the /Components/ folder and find the _slideshow.scss partial. To see the previous concepts in action let's mock up this component.
+The last thing I want to mention is the importance of a good project structure. This goes beyond CSS but ties nicely with the philosphy of both BEM and namespaces. If a developer wants to change some styles on a *slideshow* component (s)he should be able to go into the <span class="h-mono">/components/</span> folder and find the <span class="h-mono">_slideshow.scss</span> partial. To illustrate this and to see the previous concepts in action let us mock up this slideshow component.
 
 {% highlight html %}
 <div class="c-slideshow" id="js-slideshow">
@@ -89,7 +89,7 @@ The last thing I want to mention is the importance of a good project structure. 
 </div>
 
 {% endhighlight  %}
-Note that we don't write c-slideshow__slide__button.
+Note that we don't write <span class="h-mono">c-slideshow__slide__button</span>.
 BEM does not recommend nesting of elements because it hinders the ability to change the structure of the block without modifying the existing code.
 
 {% highlight scss %}
@@ -144,7 +144,7 @@ This component lives in its respectful folder in a project that might look somet
 │   │   └───_that-plugin.scss
 {% endhighlight %}
 
-I highly recommend importing each individual file in your master SCSS file instead of using glob patterns/wildcards (@import **/*). That way you always keep a good overview over what's being included in your final stylesheet.
+I highly recommend importing each individual file in your master SCSS file instead of using glob/wildcards <span class="h-mono">(@import \*\*/*)</span>. That way you always keep a good overview over what's being included in your final stylesheet.
 
 Moving on
 ---
