@@ -2,20 +2,12 @@
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-	.top-wrapper {
+	.index-wrapper {
 		display: flex;
 		flex-direction: row;
 		flex: 0 1 90%;
 		border-bottom: 0.5rem solid color(_white);
 	}
-	.bot-wrapper {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		flex: 0 1 10%;
-	}
-
 	.left-side {
 		flex: 0 1 50%;
 		background-size: auto;
