@@ -5,6 +5,7 @@
 @import "environment/functions";
 @import "environment/variables";
 
+@import "base/fontfaces";
 @import "base/normalize";
 @import "base/setup";
 @import "base/typography";
@@ -22,5 +23,6 @@
 
 @import "sections/index";
 @import "sections/about";
+@import "sections/footer";
 
 @import "vendor/highlightjs";

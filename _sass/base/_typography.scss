@@ -1,16 +1,16 @@
 // Typesetting variables. Edit these!
-$baseFontSize: 19; 
+$baseFontSize: 20; 
 $baseLineHeight: 1.5; // how large the line height is as a multiple of font size
 $leading: $baseLineHeight * 1rem;
+
 // Rate of growth for headings
-// I actually like this to be slightly smaller then the leading. Makes for tight headings.
-$scale: 1.114;
+$scale: 1.214;
 
 // Setup
 
 html {
     /* Change default typefaces here */
-    font-family: 'Gentium Basic', sans-serif;;
+    font-family: 'Merriweather', sans-serif;;
     font-size: $baseFontSize / 16 * 100%;
     letter-spacing: 0.01rem;
     text-align: justify;
@@ -20,6 +20,7 @@ html {
     line-height: rem(24px);
     // Make everything look a little nicer in webkit
     -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 
 }
 // Copy & Lists
@@ -64,10 +65,11 @@ h6 {
     margin-bottom: 0;
     line-height: $leading;
     text-shadow: 1px 1px 0 color(_white);
-    text-rendering: optimizeLegibility;
 }
 h1 {
-    font-family: "Playfair Display", sans-serif;
+    //font-family: "Playfair Display", sans-serif;
+    font-family: "Bookmania", sans-serif;
+    font-weight: 600;
     font-size: 3 * $scale * 1rem;
     line-height: 3 * $leading;
     margin-top: 2 * $leading;
@@ -76,7 +78,8 @@ h1 {
     }
 }
 h2 {
-    font-family: "Playfair Display", sans-serif;
+    font-family: "Bookmania", sans-serif;
+    font-weight: 400;
     font-size: 2 * $scale * 1rem;
     line-height: 2 * $leading;
     margin-top: 2 * $leading;
@@ -85,22 +88,20 @@ h2 {
     }
 }
 h3 {
-    font-family: "Vollkorn", sans-serif;
+    font-family: "Bookmania", sans-serif;
     font-weight: 400;
     font-size: 1 * $scale * 1rem;
 }
 h4 {
-    font-family: "Vollkorn", sans-serif;
+    font-family: "Bookmania", sans-serif;
     font-weight: 400;
     font-size: $scale / 2 * 1rem;
 }
 h5 {
-    font-family: "Vollkorn", sans-serif;
     font-weight: 400;
     font-size: $scale / 3 * 1rem;
 }
 h6 {
-    font-family: "Vollkorn", sans-serif;
     font-weight: 400;
     font-size: $scale / 4 * 1rem;
 }
@@ -120,6 +121,7 @@ th {
 
 code {
     // Forces text to constrain to the line-height. Not ideal, but works.
+    font-family: 'source-code-pro', monospace;
     vertical-align: bottom;
     font-size: 0.85rem;
 }

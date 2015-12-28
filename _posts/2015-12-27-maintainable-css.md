@@ -58,7 +58,7 @@ Namespaces are a great way to extend the transparent and self-documenting princi
 
 Scoping
 ---
-Next up is scoping, also known as prefixing. If multiple teams are working on different parts of a large web application, where each team has their own way of authoring CSS and a naming methology like BEM can't be forced, we can use scopes.
+Next up is scoping, also known as prefixing. If multiple teams are working on different parts of a large web application where each team has their own way of authoring CSS and a naming methology like BEM can't be forced, we can use scopes.
 
 Each team gets their own prefix, in our example *PDS* (for an imaginary *Player Deposit Service* team). The team prefixes their Sass master file...
 

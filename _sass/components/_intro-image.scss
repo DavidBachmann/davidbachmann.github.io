@@ -16,9 +16,6 @@
 			opacity: 1;
 		}
 		> use {
-			fill: color(_offwhite);
-		}
-		&:hover > use {
 			fill: color(_white);
 		}
 	}

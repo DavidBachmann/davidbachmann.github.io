@@ -1,12 +1,9 @@
 .latest-articles {
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-end;
-	height: 100%;
-	margin-top: 2rem;			
-	.single-article {
-		display: block;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 70vh;
+		.single-article {
 		padding-bottom: 1.5rem;
 		&:hover {
 			.single-article__title {
@@ -14,9 +11,9 @@
 			}
 		}
 		&__title {
-			font-family: "Playfair Display", sans-serif;
-			font-size: rem(28px);
+			font-family: "Bookmania", sans-serif;
 			font-weight: 400;
+			font-size: rem(28px);
 			margin-top: 2rem;
 			&:hover {
 				color: color(_red);

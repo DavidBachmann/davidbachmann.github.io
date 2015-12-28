@@ -1,7 +1,12 @@
 .table-of-contents {
   flex: 0 0 25%;
   margin-right: 1rem;
+  font-family: "Source Code Pro", sans-serif;
   font-weight: 400;
+  letter-spacing: 2px;
+  word-spacing: -2px;
+  line-height: 1.5rem;
+  font-size: 0.8rem;
   nav {
     &.is-fixed {
      position: fixed;
@@ -21,7 +26,6 @@
   &__item {
     display: block;
     color: color(_text);
-    line-height: 2;
     text-decoration: none;
     text-transform: capitalize;
     &.is-active {

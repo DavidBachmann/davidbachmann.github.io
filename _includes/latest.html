@@ -1,6 +1,7 @@
 <div class="latest-articles">
-    {% for post in site.posts limit:6 %}
-    <div class="single-article js-link-parent">
+<h2 style="margin-bottom: 2rem; text-align: right;">Latest articles</h2>
+    {% for post in site.posts limit:5 %}
+    <div class="single-article">
         <a href="{{ site.baseurl }}{{ post.url }}" class="single-article__title">
           {{ post.title }}
         </a>
