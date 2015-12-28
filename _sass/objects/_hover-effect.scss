@@ -1,0 +1,9 @@
+.js-hover {
+	cursor: crosshair;
+	background-image: url("../images/underscore-red2.png");
+	background-repeat: repeat-x;
+	background-position: 0 100%;
+	&:hover {
+		color: color(_red);
+	}
+}

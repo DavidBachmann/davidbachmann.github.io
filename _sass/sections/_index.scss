@@ -5,7 +5,7 @@
 	.index-wrapper {
 		display: flex;
 		flex-direction: row;
-		flex: 0 1 90%;
+		flex: 0 1 100%;
 		border-bottom: 0.5rem solid color(_white);
 	}
 	.left-side {
@@ -18,10 +18,13 @@
 		justify-content: center;
 		align-items: center;
 		position: relative;
-		.index-svg {
+		.logo {
 			width: 40%;
 			margin-right: 6rem;
 			mix-blend-mode: overlay;
+		}
+		@include breakpoint(max-width $small) {
+			display: none;
 		}
 	}
 	.right-side {
@@ -30,6 +33,7 @@
 		position: relative;
 		z-index: 1;
 		background: color(_offwhite);
+		padding-top: 5vw;
 		padding-right: 5vw;
 		&::before {
 			content: '';
@@ -37,10 +41,17 @@
 			height: 100%;
 			background: color(_offwhite);
 			position: absolute;
+			top: 0;
 			right: 6rem;
 			transform: skew(10deg);
 			border-left: 0.5rem solid color(_white);
 			z-index: -1;
+			@include breakpoint(max-width $small) {
+				content: initial;
+			}
+		}
+		@include breakpoint(max-width $small) {
+			flex: 100%;
 		}
 	}
 }

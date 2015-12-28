@@ -12,6 +12,24 @@ body {
   background: color(_white);
   padding: 1vw;
 }
+.dev {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  font-size: 14px;
+  background: red;
+  color: white;
+    &::after {
+      content: '';
+      width: 150px;
+      height: 150px;
+      @include breakpoint(max-width $large) {content: "maxwidth $large"}
+      @include breakpoint(max-width $medium) {content: "maxwidth $medium" }
+      @include breakpoint(max-width $small) {content: "maxwidth $small" }
+    }
+
+}
+
 
 ::selection {
   background-color: rgba(color(_red), 0.7);
@@ -20,6 +38,7 @@ body {
 }
 
 .wrapper {
+  position: relative;
 	background: color(_offwhite);
 }
 

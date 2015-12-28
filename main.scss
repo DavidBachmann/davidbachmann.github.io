@@ -4,8 +4,8 @@
 @import "environment/config";
 @import "environment/functions";
 @import "environment/variables";
+@import "environment/breakpoint";
 
-@import "base/fontfaces";
 @import "base/normalize";
 @import "base/setup";
 @import "base/typography";
@@ -13,9 +13,11 @@
 
 @import "objects/page";
 @import "objects/article";
+@import "objects/hover-effect";
+
 
 @import "components/latest-articles";
-@import "components/menu";
+@import "components/header";
 @import "components/table-of-contents";
 @import "components/content";
 @import "components/intro-image";
@@ -23,6 +25,5 @@
 
 @import "sections/index";
 @import "sections/about";
-@import "sections/footer";
 
 @import "vendor/highlightjs";

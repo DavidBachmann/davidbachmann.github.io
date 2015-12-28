@@ -7,6 +7,9 @@
   word-spacing: -2px;
   line-height: 1.5rem;
   font-size: 0.8rem;
+  @include breakpoint(max-width $medium) {
+    display: none;
+  }
   nav {
     &.is-fixed {
      position: fixed;
@@ -29,7 +32,6 @@
     text-decoration: none;
     text-transform: capitalize;
     &.is-active {
-      //color: darken(color(_text), 10%);
       color: color(_red);
       &:hover {
         color: color(_red);
@@ -41,5 +43,8 @@
     &:first-of-type {
       padding-top: 0.5rem;
     }
+  }
+  @include breakpoint(max-width $small) {
+    display: none;
   }
 }

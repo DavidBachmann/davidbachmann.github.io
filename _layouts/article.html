@@ -3,46 +3,12 @@ layout: default
 ---
 
 <div class="wrapper">
+{% include nav.html %}
 	<div class="page">
-	<header class="header" id="js-header">
-		{% include nav.html %}
-	</header>
-		<div data-aload class="intro-image" id="js-parallax" style="background-image: url('/images{{page.id}}.jpg')">
-			<a href="/">
-				<svg class="intro-image__logo">
-					<use xlink:href="/images/sprite.svg#logo"></use>
-				</svg>
-			</a>
-		</div>
-		
-		<div class="meta">
-		{% if page.tags.size > 0 %}
-		<div class="topics">
-		  <p> <span class="h-italics">Tags:</span>
-		    {% for tag in page.tags %}
-		    <span>
-		      {% if site.data.tags[tag] %}
-		      <a href="{{ site.baseurl }}/tags/{{ tag }}">{{ site.data.tags[tag].name}}</a>
-		      {% endif %}
-		    </span>
-		    {% endfor %}
-		    </p>
-		</div>
-		{% endif %}
-		
-		{% if page.credits %}
-		<div class="credits">
-			<p>Image by {{page.credits.name}} — <a href="//{{ page.credits.directLink }}" target="_blank">{{ page.credits.website }}</a></p>
-		</div>
-		{% endif %}
-
-		</div>
-			<div class="content">
 			{% include toc.html %}
 				<main class="article hyphenate">
 					{{ content }}
 				</main>
-			</div>
 	</div>
 	
 </div>

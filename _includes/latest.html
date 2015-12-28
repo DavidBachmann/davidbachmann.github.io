@@ -1,11 +1,10 @@
 <div class="latest-articles">
-<h2 style="margin-bottom: 2rem; text-align: right;">Latest articles</h2>
-    {% for post in site.posts limit:5 %}
-    <div class="single-article">
-        <a href="{{ site.baseurl }}{{ post.url }}" class="single-article__title">
-          {{ post.title }}
-        </a>
-        <p class="single-article__date">— {{ post.date | date_to_string | date: "%e %B %Y" }}</p>
-    </div>
-    {% endfor %}
-</div>
+  {% for post in site.posts limit:5 %}
+  <div class="single-article">
+      <a href="{{ site.baseurl }}{{ post.url }}" class="single-article__title">
+        {{ post.title }}
+      </a>
+      <p class="single-article__date">— {{ post.date | date_to_string | date: "%e %B %Y" }}</p>
+  </div>
+  {% endfor %}
+</div

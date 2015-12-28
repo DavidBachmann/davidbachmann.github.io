@@ -1,9 +1,9 @@
 <nav class="menu">
 {% assign current = page.url | downcase | split: '/' %}
     <a href='/'
-    	{% if current[1] == page.baseurl %} class='menu__item is-active'
-    	{% else %} class="menu__item" 
-    	{% endif %}>Articles
+        {% if current[1] == page.baseurl %} class='menu__item is-active'
+        {% else %} class="menu__item" 
+        {% endif %}>Home
     </a>
     <a href='/about' 
     	{% if current[1] == 'about' %} class='menu__item is-active'

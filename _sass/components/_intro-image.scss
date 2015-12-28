@@ -1,6 +1,6 @@
 .intro-image {
 	margin: 0 auto;
-	height: 350px;
+	height: 80vh;
 	overflow: hidden;
 	background-size: 100%;
 	background-position: 50% 60%;
@@ -9,6 +9,18 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: relative;
+	&__caption {
+		position: absolute;
+		left: 10%;
+		bottom: 10%;
+		font-size: 4rem;
+		color: rgb(251, 251, 251);
+		text-shadow: 1px 1px 2px #333;
+	}
+	&__subtitle {
+		
+	}
 	&__logo {
 		width: 155px;
 		opacity: 0.8;

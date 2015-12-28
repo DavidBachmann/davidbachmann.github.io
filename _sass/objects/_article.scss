@@ -1,7 +1,9 @@
 .article {
   flex: 1;
   max-width: 42rem;
-  margin-top: 2rem;
+  @include breakpoint(max-width $small) {
+    max-width: 38rem;
+  }
   p {
   	&:not(:first-of-type) {
   		text-indent: 1rem;  		
