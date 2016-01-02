@@ -2,8 +2,9 @@
 	display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 90vh;
   line-height: 1.2;
+  margin-right: 2rem;
+  margin-right: 4vw;
 		.single-article {
 		padding-bottom: 1.5rem;
 		&:hover {
@@ -14,8 +15,9 @@
 		&__title {
 			font-family: "Bookmania", sans-serif;
 			font-weight: 400;
-			font-size: rem(28px);
-			margin-to: 2rem;
+			//font-size: calc( 1rem + (2.5rem - 1rem) * ( (100vw - 400px) / ( 800 - 400) ));
+			font-size: 2rem;
+			margin-top: 2rem;
 			&:hover {
 				color: color(_red);
 			}
@@ -24,6 +26,9 @@
 			font-family: "Source Sans Pro";
 			font-weight: 200;
 			margin-top: 0;
+			//font-size: calc(1rem + (1.5rem - 1rem) * ((100vw - 400px) / ( 800 - 400)));
+			//font-size: calc(0.5rem + 1vw);
+			font-size: 1rem;
 			color: lighten(color(_text), 20%);
 		}
 	}

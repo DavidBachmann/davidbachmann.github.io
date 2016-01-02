@@ -1,57 +1,51 @@
 [index] {
 	display: flex;
-	flex-direction: column;
 	height: 100%;
+	overflow: hidden;
 	.index-wrapper {
 		display: flex;
 		flex-direction: row;
 		flex: 0 1 100%;
-		border-bottom: 0.5rem solid color(_white);
 	}
 	.left-side {
-		flex: 0 1 50%;
 		background-size: auto;
 		background-position: 50% 50%;
 		background-repeat: no-repeat;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
 		align-items: center;
 		position: relative;
-		.logo {
-			width: 40%;
-			margin-right: 6rem;
-			mix-blend-mode: overlay;
-		}
+		z-index: 2;
+		justify-content: center;
+		display: flex;
+		flex-direction: column;
+		flex: auto;;
 		@include breakpoint(max-width $small) {
 			display: none;
 		}
 	}
 	.right-side {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;	
 		flex: 0 1 50%;
 		text-align: right;
 		position: relative;
-		z-index: 1;
-		background: color(_offwhite);
-		padding-top: 5vw;
-		padding-right: 5vw;
-		&::before {
-			content: '';
-			width: 100%;
-			height: 100%;
-			background: color(_offwhite);
-			position: absolute;
-			top: 0;
-			right: 6rem;
-			transform: skew(10deg);
-			border-left: 0.5rem solid color(_white);
-			z-index: -1;
-			@include breakpoint(max-width $small) {
-				content: initial;
-			}
-		}
+		z-index: 2;
+
 		@include breakpoint(max-width $small) {
 			flex: 100%;
+		}
+		&::after {
+			content: "";
+			display: inline-block;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: -20%;
+			right: -100%;
+			background: color(_offwhite);
+			z-index: -1;
+			transform-origin: 100% 50%;
+			transform: skewX(-10deg);
 		}
 	}
 }
