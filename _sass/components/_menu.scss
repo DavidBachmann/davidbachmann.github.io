@@ -56,7 +56,7 @@
   &.is-active {
     padding: 0;
     .toggler-inner {
-      width: 2rem;
+      width: 40px;
     }
   }
 
@@ -64,7 +64,7 @@
 
 .toggler-inner {
   background: color(_text);
-  height: .25rem;
+  height: 5px;
   width: 24px;
   opacity: 0.75;
   &::before, &::after {
@@ -83,10 +83,10 @@
   &.is-active {
     background: transparent;
     &::before {
-      transform: translateY(0rem) rotate(-45deg);
+      transform: translateY(0) rotate(-45deg);
     }
     &::after {
-      transform: translateY(-0.25rem) translateX(0rem) rotate(45deg);
+      transform: translateY(-5px) translateX(0) rotate(45deg);
     }
   }
 }
