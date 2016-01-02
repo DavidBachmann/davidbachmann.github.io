@@ -96,26 +96,13 @@ window.addEventListener('load', function() {
     }
   })();
 
-  // Switch out About background-image on link hover
+  // Toggle menu
   (function(){
-      var img = document.getElementById('js-right-img');
-      var link = document.getElementsByClassName("js-hover");
-      var imgUrl = '1';
-      var handleMouseOver = debounce(function() {
-      var self = this;
-
-      if (self.dataset.url) {
-        img.style.backgroundImage = "url('../images/" + self.dataset.url + ".jpg')";
-      }
-    }, 50);
-
-    var handleMouseOut = debounce(function() {
-      img.style.backgroundImage ="url('../images/" + imgUrl + ".jpg')";
-    }, 50);
-
-    for (var i = 0; i < link.length; i++) {
-      link[i].addEventListener('mouseover', handleMouseOver, true);
-      link[i].addEventListener('mouseout', handleMouseOut, true);
-    }
+    document.getElementById("js-toggle").addEventListener("click", function( event ) {
+      // display the current click count inside the clicked div
+      this.classList.toggle('is-active');
+      document.getElementById("js-toggle-inner").classList.toggle('is-active');
+      document.getElementById("js-menu").classList.toggle('is-visible');
+    }, false);
   })();
 });

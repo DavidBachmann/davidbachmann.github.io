@@ -1,4 +1,7 @@
-<div class="menu">
+<nav class="toggler" id="js-toggle">
+  <div class="toggler-inner" id="js-toggle-inner"></div>
+</nav>
+<div class="menu" id="js-menu">
   <nav>
   {% assign current = page.url | downcase | split: '/' %}
       <a href='/'
