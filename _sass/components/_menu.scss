@@ -1,0 +1,31 @@
+.menu {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  opacity: 0.95;
+  z-index: 50;
+  color: color(_text);
+  left: 0;
+  margin: auto;
+  background: color(_offwhite);
+  &.is-visible {
+    display: block;
+  }
+  &__item {
+    width: 100%;
+    text-align: center;
+    &:hover {
+      background: white;
+    }
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 2rem;
+    line-height: 2;
+  }
+}

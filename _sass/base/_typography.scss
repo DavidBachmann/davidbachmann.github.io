@@ -26,19 +26,6 @@ $max_font: 20;
    }
 }
 
-
-
-// Not related to this technique
-body{ padding: 0 1em; }
-table{
-  border-collapse: collapse;
-  border-spacing: 0px;
-  border: 1px solid #CBCBCB;
-}
-td,th {
-  padding: 0.25rem .5rem;
-  border: 1px solid #CBCBCB;
-}
 // Setup
 
 html {
@@ -50,7 +37,6 @@ html {
     font-style: normal;
     line-height: rem(24px);
     font-size: $baseFontSize / 16 * 100%;
-    // Make everything look a little nicer in webkit
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }

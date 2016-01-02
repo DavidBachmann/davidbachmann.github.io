@@ -1,4 +1,5 @@
 <div class="latest-articles">
+<p class="latest-articles__header">Latest articles</p>
   {% for post in site.posts limit:5 %}
   <div class="single-article">
       <a href="{{ site.baseurl }}{{ post.url }}" class="single-article__title">
