@@ -10,8 +10,6 @@
   margin: auto;
   background: color(_offwhite);
   opacity: 0.95;
-  transition: all 2s ease-in-out;
-  transition-delay: 1s;
   &.is-visible {
     display: block;
     border: 1rem solid color(_text);

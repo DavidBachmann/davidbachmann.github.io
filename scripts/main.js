@@ -109,7 +109,6 @@ window.addEventListener('load', function() {
       menu.classList.toggle(visibleClass);
 
       if (menu.classList.contains(visibleClass)) {
-        console.log("it does");
         menu.addEventListener("click", function(e) {
           el.classList.remove(activeClass);
           menuInner.classList.remove(activeClass);
