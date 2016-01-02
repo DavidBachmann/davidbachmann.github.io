@@ -98,11 +98,25 @@ window.addEventListener('load', function() {
 
   // Toggle menu
   (function(){
-    document.getElementById("js-toggle").addEventListener("click", function( event ) {
-      // display the current click count inside the clicked div
-      this.classList.toggle('is-active');
-      document.getElementById("js-toggle-inner").classList.toggle('is-active');
-      document.getElementById("js-menu").classList.toggle('is-visible');
+    var el = document.getElementById("js-toggle");
+    el.addEventListener("click", function(e) {
+      var menu = document.getElementById("js-menu");
+      var menuInner = document.getElementById("js-toggle-inner");
+      var activeClass = 'is-active';
+      var visibleClass = 'is-visible';
+      this.classList.toggle(activeClass);
+      menuInner.classList.toggle(activeClass);
+      menu.classList.toggle(visibleClass);
+
+      if (menu.classList.contains(visibleClass)) {
+        console.log("it does");
+        menu.addEventListener("click", function(e) {
+          el.classList.remove(activeClass);
+          menuInner.classList.remove(activeClass);
+          menu.classList.remove(visibleClass);
+        });
+      }
+   
     }, false);
   })();
 });

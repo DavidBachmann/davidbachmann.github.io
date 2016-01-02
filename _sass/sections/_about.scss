@@ -1,6 +1,7 @@
 [about] {
 	display: flex;
 	flex-direction: column;
+	position: relative;
 	height: 100%;
 	.about-wrapper {
 		background: color(_offwhite);

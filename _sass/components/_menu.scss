@@ -9,14 +9,19 @@
   left: 0;
   margin: auto;
   background: color(_offwhite);
+  opacity: 0.95;
+  transition: all 2s ease-in-out;
+  transition-delay: 1s;
   &.is-visible {
     display: block;
+    border: 1rem solid color(_text);
   }
   &__item {
     width: 100%;
     text-align: center;
     &:hover {
-      background: white;
+      background: #3C474E;
+      color: color(_white);
     }
   }
   nav {
@@ -75,18 +80,18 @@
     width: 40px;
   }
   &::before {
-    transform: translateY(20px);
+    transform: translateY(20px) translateZ(0);
   }
   &::after {
-    transform: translateY(5px);
+    transform: translateY(5px) translateZ(0);
   }
   &.is-active {
     background: transparent;
     &::before {
-      transform: translateY(0) rotate(-45deg);
+      transform: translateY(0) translateZ(0) rotate(-45deg);
     }
     &::after {
-      transform: translateY(-5px) translateX(0) rotate(45deg);
+      transform: translateY(-5px) translateX(0) translateZ(0) rotate(45deg);
     }
   }
 }
