@@ -1,0 +1,25 @@
+//**
+//* The page object is the site's content wrapper.
+//**
+
+.article {
+  display: flex;
+  position: relative;
+  padding: 5rem 3rem;
+  &__page {
+    flex: 1;
+    max-width: 42rem;
+    @include breakpoint(max-width $small) {
+      max-width: 38rem;
+    }
+    p {
+      &:not(:first-of-type) {
+        text-indent: 1rem;      
+      }
+    }
+    a {
+      @extend %pop;
+    }
+  }
+}
+

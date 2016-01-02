@@ -11,17 +11,11 @@
 @import "base/typography";
 @import "base/helpers";
 
-@import "objects/page";
-@import "objects/article";
-@import "objects/hover-effect";
-
-
-@import "components/latest-articles";
-@import "components/menu";
-@import "components/table-of-contents";
-@import "components/content";
-@import "components/intro-image";
-@import "components/meta";
+@import "things/article";
+@import "things/latest-articles";
+@import "things/menu";
+@import "things/table-of-contents";
+@import "things/hover-effect";
 
 @import "sections/index";
 @import "sections/about";
