@@ -1,0 +1,27 @@
+.breadcrumbs {
+  $color: #808080;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  position: absolute;
+  top: 1.5rem;
+  left: 2rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  color: $color;
+  a {
+    &:hover {
+      box-shadow: 0 1px 0 lighten($color, 10%); 
+    }
+    &:last-of-type {
+      box-shadow: 0 1px 0 lighten($color, 10%);
+    }
+  }
+  &__separator {
+    margin: 0 0.24rem;
+  }
+}
