@@ -1,11 +1,6 @@
 ---
 layout: article
 title: Maintainable CSS
-tags: [css, web development]
-credits: 
-  name: Negative Space
-  website: Unsplash
-  directLink: unsplash.com
 toc: [maintainable-css, bem, namespaces, scoping, project-structure, moving-on]
 ---
 
