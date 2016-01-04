@@ -1,0 +1,45 @@
+---
+layout: article
+title: The Lighthouse
+tags: [jekyll, javascript, css, life]
+toc: [the-lighthouse, holiday, wayne-foundation, gotham, theme-song]
+---
+
+The Lighthouse
+===
+
+Really? You had to click this one. This isn't even a real article, this is where I've been experimenting with typography. Why is it visible you ask? The *latest articles* section looked so empty that I cheated and added this one. Well, you're still reading this so I hope you like your Ipsums for I will now present to you Batman Ipsum. Ever seen that one? It's quite swell.
+
+Holiday
+---
+
+Every year, I took a holiday. I went to Florence, this cafe on the banks of the Arno. Every fine evening, I would sit there and order a Fernet Branca. I had this fantasy, that I would look across the tables and I would see you there with a wife maybe a couple of kids. You wouldn't say anything to me, nor me to you. But we would both know that you've made it, that you were happy. I never wanted you to come back to Gotham. I always knew there was nothing here for you except pain and tragedy and I wanted something more for you than that. I still do.latest-articles
+
+You wanna know how I got them? So I had a wife. She was beautiful, like you, who tells me I worry too much, who tells me I ought to smile more, who gambles and gets in deep with the sharks. Hey. One day they carve her face. And we have no money for surgeries. She can't take it. I just wanna see her smile again. I just want her to know that I don't care about the scars. So, I do this to myself. And you know what? She can't stand the sight of me. She leaves. Now I see the funny side. Now I'm always smiling.
+
+{% highlight javascript %}
+// Batman holyday script
+(function(){
+  this.holiday = function() {
+      var days = 14;
+      var holiday = document.getElementById('holiday');
+      if (days > 5) {
+        holiday.style.animation="holiday 14 ease 1s forwards"
+      }
+  }
+})();
+{% endhighlight %}
+
+Wayne Foundation
+---
+
+But we've met before. That was a long time ago, I was a kid at St. Swithin's, It used to be funded by the Wayne Foundation. It's an orphanage. My mum died when I was small, it was a car accident. I don't remember it. My dad got shot a couple of years later for a gambling debt. Oh I remember that one just fine. Not a lot of people know what it feels like to be angry in your bones. I mean they understand. The fosters parents. Everybody understands, for a while. Then they want the angry little kid to do something he knows he can't do, move on. After a while they stop understanding. They send the angry kid to a boy's home, I figured it out too late. Yeah I learned to hide the anger, and practice smiling in the mirror. It's like putting on a mask. So you showed up this one day, in a cool car, pretty girl on your arm. We were so excited! Bruce Wayne, a billionaire orphan? We used to make up stories about you man, legends and you know with the other kids, that's all it was, just stories, but right when I saw you, I knew who you really were. I'd seen that look on your face before. It's the same one I taught myself. I don't why you took the fault for Dent's murder but I'm still a believer in the Batman. 
+
+Gotham
+----
+
+Every man who has lotted here over the centuries, has looked up to the light and imagined climbing to freedom. So easy, so simple! And like shipwrecked men turning to seawater foregoing uncontrollable thirst, many have died trying. And then here there can be no true despair without hope. So as I terrorize Gotham, I will feed its people hope to poison their souls. I will let them believe that they can survive so that you can watch them climbing over each other to stay in the sun. You can watch me torture an entire city. And then when you've truly understood the depth of your failure, we will fulfill Ra's Al Ghul's destiny. We will destroy Gotham. And then, when that is done, and Gotham is... ashes Then you have my permission to die.
+
+Theme song
+----
+Na na na na na na na na na na na na na na na na na na na na na **Batman!** na na na na na na na na na na na na **Batman!** na na na na na na na na na na na na na na na **Batman!** na na na na na na na na na na na na na na na na na na na na na na na na na na na na na na **Batman!** na na na na na na **Batman!** na na na na na na na na na na na na na na na na na na na na na na na na na na na na na na na na na na na na na na na na na na

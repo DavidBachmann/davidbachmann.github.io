@@ -99,7 +99,7 @@ h2 {
     font-family: "Bookmania", sans-serif;
     font-weight: 400;
     font-size: 2 * $scale * 1rem;
-    line-height: 2 * $leading;
+    line-height: $leading;
     margin-top: 2 * $leading;
     &:first-child {
         margin-top: 0;
