@@ -5,12 +5,22 @@
 *, *:before, *:after {
 	box-sizing: border-box;
 }
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 html, body {
   height: 100%;
 }
 body {
-  background: color(_white);
+  background: rgba(58, 71, 80, 0.08);
+  //background: color(_white);
   padding: 1rem;
+  width: 100%;
+  max-width: rem(1800px);
+  max-height: rem(1160px);
+  position: relative;
 }
 .dev {
   position: fixed;

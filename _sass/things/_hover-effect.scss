@@ -5,5 +5,12 @@
 	background-position: 0 100%;
 	&:hover {
 		color: color(_red);
+    @include breakpoint(max-width $small) {
+      color: inherit;
+    }
 	}
+  @include breakpoint(max-width $small) {
+    cursor: initial;
+    background: none;
+  }
 }

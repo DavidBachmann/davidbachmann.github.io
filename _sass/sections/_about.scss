@@ -29,6 +29,9 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		@include breakpoint(max-width $small) {
+		  flex: 1;
+		}
 		&::before {
 			content: '';
 			width: 100%;
@@ -40,6 +43,9 @@
 			transform: skew(-10deg);
 			border-right: 0.5rem solid color(_white);
 			z-index: -1;
+			@include breakpoint(max-width $small) {
+			  content: initial;
+			}
 		}
 		.social {
 			margin-top: 2rem;
@@ -78,6 +84,9 @@
 		background-size: cover;
 		will-change: background;
 		transform: translate3d(0,0,0);
+		@include breakpoint(max-width $small) {
+		  display: none;
+		}
 		&::before {
 			content: '';
 			width: 100%;
