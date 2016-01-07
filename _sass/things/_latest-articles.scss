@@ -5,18 +5,20 @@
   line-height: 1.2;
   margin-right: 4em;
   font-size: 150%;
+  flex: 50%;
   &__header {
   	font-family: serif;
   	font-size: 1.5em;
   	text-transform: uppercase;
-  	margin-bottom: 2em;
+    margin-top: 0;
+  	margin-bottom: 1.25em;
   	align-self: flex-end;
   	box-shadow: 0 1px 0 color(_white), 0 2px 0 color(_text);
   	color: color(_text);
   	padding-bottom: 0.5em;
   	letter-spacing: 0.15em;
   }
-		.single-article {
+	 .single-article {
 		padding-bottom: 0.5em;
 		&:hover {
 			.single-article__title {
@@ -26,8 +28,9 @@
 		&__title {
 			font-family: "Bookmania", sans-serif;
 			font-weight: 400;
-			font-size: 1.5em;
-			margin-top: 1.5em;
+			font-size: 1.25em;
+			margin-top: 1.25em;
+      line-height: 1.25em;
 			&:hover {
 				color: color(_red);
 			}
@@ -36,7 +39,7 @@
 			font-family: "Source Sans Pro";
 			font-weight: 200;
 			margin-top: 0;
-			font-size: 1em;
+			font-size: 0.75em;
 			color: lighten(color(_text), 20%);
 		}
 	}

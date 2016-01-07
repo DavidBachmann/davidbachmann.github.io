@@ -20,6 +20,9 @@
     &:hover {
       color: color(_red);
     }
+    &.is-active {
+      color: color(_red);
+    }
   }
   nav {
     display: flex;
